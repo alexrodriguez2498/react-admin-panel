@@ -1,0 +1,90 @@
+{
+  "data": [
+    {
+      "name": "Architectural",
+      "entries": [
+        {
+          "id": "0",
+          "title": "A2.01-1",
+          "subtitle": "Building 1 floor plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "1",
+          "title": "A2.03-1",
+          "subtitle": "Building 1 ceiling plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "2",
+          "title": "A2.04-1",
+          "subtitle": "Building 1 elevations  plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        }
+      ]
+    },
+    {
+      "name": "Civil",
+      "entries": [
+        {
+          "id": "0",
+          "title": "A2.01-1",
+          "subtitle": "Building 1 floor plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "1",
+          "title": "A2.03-1",
+          "subtitle": "Building 1 ceiling plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "2",
+          "title": "A2.04-1",
+          "subtitle": "Building 1 elevations  plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "2",
+          "title": "A2.04-1",
+          "subtitle": "Building 1 elevations  plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        }
+      ]
+    },
+    {
+      "name": "Electrical",
+      "entries": [
+        {
+          "id": "0",
+          "title": "A2.01-1",
+          "subtitle": "Building 1 floor plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "1",
+          "title": "A2.03-1",
+          "subtitle": "Building 1 ceiling plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "2",
+          "title": "A2.04-1",
+          "subtitle": "Building 1 elevations  plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },        {
+          "id": "3",
+          "title": "A2.01-1",
+          "subtitle": "Building 1 floor plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        },
+        {
+          "id": "4",
+          "title": "A2.03-1",
+          "subtitle": "Building 1 ceiling plan",
+          "img": "https://www.primefaces.org/wp-content/uploads/2020/05/placeholder.png"
+        }
+      ]
+    }
+  ]
+}
