@@ -7,9 +7,9 @@
 			"description": "Product Description",
 			"image": "bamboo-watch.jpg",
 			"price": 65,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 24,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -19,9 +19,9 @@
 			"description": "Product Description",
 			"image": "black-watch.jpg",
 			"price": 72,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 61,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -31,9 +31,9 @@
 			"description": "Product Description",
 			"image": "blue-band.jpg",
 			"price": 79,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 2,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 3
 		},
 		{
@@ -43,9 +43,9 @@
 			"description": "Product Description",
 			"image": "blue-t-shirt.jpg",
 			"price": 29,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 25,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -55,9 +55,9 @@
 			"description": "Product Description",
 			"image": "bracelet.jpg",
 			"price": 15,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 73,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -67,9 +67,9 @@
 			"description": "Product Description",
 			"image": "brown-purse.jpg",
 			"price": 120,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+			"date": "1/25/21 12:50 PM",
 			"rating": 4
 		},
 		{
@@ -79,9 +79,9 @@
 			"description": "Product Description",
 			"image": "chakra-bracelet.jpg",
 			"price": 32,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 5,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 3
 		},
 		{
@@ -91,9 +91,9 @@
 			"description": "Product Description",
 			"image": "galaxy-earrings.jpg",
 			"price": 34,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 23,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -103,9 +103,9 @@
 			"description": "Product Description",
 			"image": "game-controller.jpg",
 			"price": 99,
-			"category": "Electronics",
+			"category": "Specifications",
 			"quantity": 2,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 4
 		},
 		{
@@ -115,9 +115,9 @@
 			"description": "Product Description",
 			"image": "gaming-set.jpg",
 			"price": 299,
-			"category": "Electronics",
+			"category": "Specifications",
 			"quantity": 63,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 3
 		},
 		{
@@ -127,9 +127,9 @@
 			"description": "Product Description",
 			"image": "gold-phone-case.jpg",
 			"price": 24,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+			"date": "1/25/21 12:50 PM",
 			"rating": 4
 		},
 		{
@@ -139,9 +139,9 @@
 			"description": "Product Description",
 			"image": "green-earbuds.jpg",
 			"price": 89,
-			"category": "Electronics",
+			"category": "Specifications",
 			"quantity": 23,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -151,9 +151,9 @@
 			"description": "Product Description",
 			"image": "green-t-shirt.jpg",
 			"price": 49,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 74,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -163,9 +163,9 @@
 			"description": "Product Description",
 			"image": "grey-t-shirt.jpg",
 			"price": 48,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+			"date": "1/25/21 12:50 PM",
 			"rating": 3
 		},
 		{
@@ -175,9 +175,9 @@
 			"description": "Product Description",
 			"image": "headphones.jpg",
 			"price": 175,
-			"category": "Electronics",
+			"category": "Specifications",
 			"quantity": 8,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 5
 		},
 		{
@@ -187,9 +187,9 @@
 			"description": "Product Description",
 			"image": "light-green-t-shirt.jpg",
 			"price": 49,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 34,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -199,9 +199,9 @@
 			"description": "Product Description",
 			"image": "lime-band.jpg",
 			"price": 79,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 12,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 3
 		},
 		{
@@ -211,9 +211,9 @@
 			"description": "Product Description",
 			"image": "mini-speakers.jpg",
 			"price": 85,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 42,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -223,9 +223,9 @@
 			"description": "Product Description",
 			"image": "painted-phone-case.jpg",
 			"price": 56,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 41,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -235,9 +235,9 @@
 			"description": "Product Description",
 			"image": "pink-band.jpg",
 			"price": 79,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 63,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -247,9 +247,9 @@
 			"description": "Product Description",
 			"image": "pink-purse.jpg",
 			"price": 110,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 0,
-			"inventoryStatus": "OUTOFSTOCK",
+			"date": "1/25/21 12:50 PM",
 			"rating": 4
 		},
 		{
@@ -259,9 +259,9 @@
 			"description": "Product Description",
 			"image": "purple-band.jpg",
 			"price": 79,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 6,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 3
 		},
 		{
@@ -271,9 +271,9 @@
 			"description": "Product Description",
 			"image": "purple-gemstone-necklace.jpg",
 			"price": 45,
-			"category": "Accessories",
+			"category": "Reports",
 			"quantity": 62,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -283,9 +283,9 @@
 			"description": "Product Description",
 			"image": "purple-t-shirt.jpg",
 			"price": 49,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 2,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 5
 		},
 		{
@@ -295,9 +295,9 @@
 			"description": "Product Description",
 			"image": "shoes.jpg",
 			"price": 64,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 0,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -307,9 +307,9 @@
 			"description": "Product Description",
 			"image": "sneakers.jpg",
 			"price": 78,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 52,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 4
 		},
 		{
@@ -319,9 +319,9 @@
 			"description": "Product Description",
 			"image": "teal-t-shirt.jpg",
 			"price": 49,
-			"category": "Clothing",
+			"category": "General",
 			"quantity": 3,
-			"inventoryStatus": "LOWSTOCK",
+			"date": "2/19/21 10:02 AM",
 			"rating": 3
 		},
 		{
@@ -331,9 +331,9 @@
 			"description": "Product Description",
 			"image": "yellow-earbuds.jpg",
 			"price": 89,
-			"category": "Electronics",
+			"category": "Specifications",
 			"quantity": 35,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 3
 		},
 		{
@@ -343,9 +343,9 @@
 			"description": "Product Description",
 			"image": "yoga-mat.jpg",
 			"price": 20,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 15,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 5
 		},
 		{
@@ -355,9 +355,9 @@
 			"description": "Product Description",
 			"image": "yoga-set.jpg",
 			"price": 20,
-			"category": "Fitness",
+			"category": "Submittals",
 			"quantity": 25,
-			"inventoryStatus": "INSTOCK",
+			"date": "2/22/21 11:01 AM",
 			"rating": 8
 		}
 	]

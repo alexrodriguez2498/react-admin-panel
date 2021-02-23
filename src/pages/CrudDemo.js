@@ -5,11 +5,11 @@ import { Column } from 'primereact/column';
 import { Toast } from 'primereact/toast';
 import { Button } from 'primereact/button';
 import { FileUpload } from 'primereact/fileupload';
-import { Rating } from 'primereact/rating';
+// import { Rating } from 'primereact/rating';
 import { Toolbar } from 'primereact/toolbar';
 import { InputTextarea } from 'primereact/inputtextarea';
 import { RadioButton } from 'primereact/radiobutton';
-import { InputNumber } from 'primereact/inputnumber';
+// import { InputNumber } from 'primereact/inputnumber';
 import { Dialog } from 'primereact/dialog';
 import { InputText } from 'primereact/inputtext';
 import ProductService from '../service/ProductService';
@@ -19,13 +19,13 @@ export const CrudDemo = () => {
     let emptyProduct = {
         id: null,
         name: '',
-        image: null,
+        // image: null,
         description: '',
         category: null,
-        price: 0,
-        quantity: 0,
-        rating: 0,
-        inventoryStatus: 'INSTOCK'
+        // price: 0,
+        // quantity: 0,
+        // rating: 0,
+        date: 'INSTOCK'
     };
 
     const [products, setProducts] = useState(null);
@@ -44,9 +44,9 @@ export const CrudDemo = () => {
         productService.getProducts().then(data => setProducts(data));
     }, []);
 
-    const formatCurrency = (value) => {
-        return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
-    }
+    // const formatCurrency = (value) => {
+    //     return value.toLocaleString('en-US', { style: 'currency', currency: 'USD' });
+    // }
 
     const openNew = () => {
         setProduct(emptyProduct);
@@ -161,18 +161,18 @@ export const CrudDemo = () => {
         setProduct(_product);
     }
 
-    const onInputNumberChange = (e, name) => {
-        const val = e.value || 0;
-        let _product = { ...product };
-        _product[`${name}`] = val;
+    // const onInputNumberChange = (e, name) => {
+    //     const val = e.value || 0;
+    //     let _product = { ...product };
+    //     _product[`${name}`] = val;
 
-        setProduct(_product);
-    }
+    //     setProduct(_product);
+    // }
 
     const leftToolbarTemplate = () => {
         return (
             <React.Fragment>
-                <Button label="New" icon="pi pi-plus" className="p-button-success p-mr-2" onClick={openNew} />
+                <Button label="New File" icon="pi pi-plus" className="p-button-success p-mr-2" onClick={openNew} />
                 <Button label="Delete" icon="pi pi-trash" className="p-button-danger" onClick={confirmDeleteSelected} disabled={!selectedProducts || !selectedProducts.length} />
             </React.Fragment>
         )
@@ -205,23 +205,23 @@ export const CrudDemo = () => {
         );
     }
 
-    const imageBodyTemplate = (rowData) => {
-        return (
-            <>
-                <span className="p-column-title">Image</span>
-                <img src={`assets/demo/images/product/${rowData.image}`} alt={rowData.image} className="product-image" />
-            </>
-        )
-    }
+    // const imageBodyTemplate = (rowData) => {
+    //     return (
+    //         <>
+    //             <span className="p-column-title">Image</span>
+    //             <img src={`assets/demo/images/product/${rowData.image}`} alt={rowData.image} className="product-image" />
+    //         </>
+    //     )
+    // }
 
-    const priceBodyTemplate = (rowData) => {
-        return (
-            <>
-                <span className="p-column-title">Price</span>
-                {formatCurrency(rowData.price)}
-            </>
-        );
-    }
+    // const priceBodyTemplate = (rowData) => {
+    //     return (
+    //         <>
+    //             <span className="p-column-title">Price</span>
+    //             {formatCurrency(rowData.price)}
+    //         </>
+    //     );
+    // }
 
     const categoryBodyTemplate = (rowData) => {
         return (
@@ -232,20 +232,20 @@ export const CrudDemo = () => {
         );
     }
 
-    const ratingBodyTemplate = (rowData) => {
-        return (
-            <>
-                <span className="p-column-title">Reviews</span>
-                <Rating value={rowData.rating} readonly cancel={false} />
-            </>
-        );
-    }
+    // const ratingBodyTemplate = (rowData) => {
+    //     return (
+    //         <>
+    //             <span className="p-column-title">Reviews</span>
+    //             <Rating value={rowData.rating} readonly cancel={false} />
+    //         </>
+    //     );
+    // }
 
     const statusBodyTemplate = (rowData) => {
         return (
             <>
                 <span className="p-column-title">Status</span>
-                <span className={`product-badge status-${rowData.inventoryStatus.toLowerCase()}`}>{rowData.inventoryStatus}</span>
+                <span className={`product-badge`}>{rowData.date}</span>
             </>
         )
     }
@@ -253,8 +253,8 @@ export const CrudDemo = () => {
     const actionBodyTemplate = (rowData) => {
         return (
             <div className="actions">
-                <Button icon="pi pi-pencil" className="p-button-rounded p-button-success p-mr-2" onClick={() => editProduct(rowData)} />
-                <Button icon="pi pi-trash" className="p-button-rounded p-button-warning" onClick={() => confirmDeleteProduct(rowData)} />
+                <Button icon="pi pi-pencil" className="p-button-rounded p-button-info p-mr-2" onClick={() => editProduct(rowData)} />
+                <Button icon="pi pi-trash" className="p-button-rounded p-button-danger" onClick={() => confirmDeleteProduct(rowData)} />
             </div>
         );
     }
@@ -303,16 +303,16 @@ export const CrudDemo = () => {
                         <Column selectionMode="multiple" headerStyle={{ width: '3rem' }}></Column>
                         <Column field="code" header="Code" sortable body={codeBodyTemplate}></Column>
                         <Column field="name" header="Name" sortable body={nameBodyTemplate}></Column>
-                        <Column header="Image" body={imageBodyTemplate}></Column>
-                        <Column field="price" header="Price" body={priceBodyTemplate} sortable></Column>
+                        {/* <Column header="Image" body={imageBodyTemplate}></Column> */}
+                        {/* <Column field="price" header="Price" body={priceBodyTemplate} sortable></Column> */}
                         <Column field="category" header="Category" sortable body={categoryBodyTemplate}></Column>
-                        <Column field="rating" header="Reviews" body={ratingBodyTemplate} sortable></Column>
-                        <Column field="inventoryStatus" header="Status" body={statusBodyTemplate} sortable></Column>
+                        {/* <Column field="rating" header="Reviews" body={ratingBodyTemplate} sortable></Column> */}
+                        <Column field="date" header="Date" body={statusBodyTemplate} sortable></Column>
                         <Column body={actionBodyTemplate}></Column>
                     </DataTable>
 
                     <Dialog visible={productDialog} style={{ width: '450px' }} header="Product Details" modal className="p-fluid" footer={productDialogFooter} onHide={hideDialog}>
-                        {product.image && <img src={`assets/demo/images/product/${product.image}`} alt={product.image} className="product-image" />}
+                        {/* {product.image && <img src={`assets/demo/images/product/${product.image}`} alt={product.image} className="product-image" />} */}
                         <div className="p-field">
                             <label htmlFor="name">Name</label>
                             <InputText id="name" value={product.name} onChange={(e) => onInputChange(e, 'name')} required autoFocus className={classNames({ 'p-invalid': submitted && !product.name })} />
@@ -345,7 +345,7 @@ export const CrudDemo = () => {
                             </div>
                         </div>
 
-                        <div className="p-formgrid p-grid">
+                        {/* <div className="p-formgrid p-grid">
                             <div className="p-field p-col">
                                 <label htmlFor="price">Price</label>
                                 <InputNumber id="price" value={product.price} onValueChange={(e) => onInputNumberChange(e, 'price')} mode="currency" currency="USD" locale="en-US" />
@@ -354,7 +354,7 @@ export const CrudDemo = () => {
                                 <label htmlFor="quantity">Quantity</label>
                                 <InputNumber id="quantity" value={product.quantity} onValueChange={(e) => onInputNumberChange(e, 'quantity')} integeronly />
                             </div>
-                        </div>
+                        </div> */}
                     </Dialog>
 
                     <Dialog visible={deleteProductDialog} style={{ width: '450px' }} header="Confirm" modal footer={deleteProductDialogFooter} onHide={hideDeleteProductDialog}>
