@@ -8,7 +8,7 @@ import { Panel } from 'primereact/panel';
 import ProductService from '../service/ProductService' 
 
 
-export const FormLayoutDemo = () => {
+export const TasksDemo = () => {
     const [ dataViewValue, setDataViewValue ] = useState(null)
     const [ layout, setLayout ] = useState('grid')
     const  toast = useRef()

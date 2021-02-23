@@ -10,7 +10,7 @@ import AppSearch from './AppSearch';
 import AppRightMenu from './AppRightMenu';
 
 import { Dashboard } from './components/Dashboard';
-import { FormLayoutDemo } from './components/FormLayoutDemo';
+import { TasksDemo } from './components/TasksDemo';
 import { InputDemo } from './components/InputDemo';
 import { FloatLabelDemo } from './components/FloatLabelDemo';
 import { ButtonDemo } from './components/ButtonDemo';
@@ -83,7 +83,7 @@ const App = () => {
         {
             label: "UI Kit", icon: "pi pi-fw pi-id-card",
             items: [
-                { label: "Form Layout", icon: "pi pi-fw pi-id-card", to: "/formlayout" },
+                { label: "Tasks", icon: "pi pi-fw pi-id-card", to: "/tasks" },
                 { label: "Input", icon: "pi pi-fw pi-check-square", to: "/input" },
                 { label: "Float Label", icon: "pi pi-fw pi-bookmark", to: "/floatlabel" },
                 { label: "Button", icon: "pi pi-fw pi-mobile", to: "/button" },
@@ -186,7 +186,7 @@ const App = () => {
 
     const routers = [
         { path: '/', component: Dashboard, exact: true, meta: { breadcrumb: [{ parent: 'Dashboard', label: 'Dashboard' }] } },
-        { path: '/formlayout', component: FormLayoutDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Form Layout' }] } },
+        { path: '/tasks', component: TasksDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Tasks' }] } },
         { path: '/input', component: InputDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Input' }] } },
         { path: '/floatlabel', component: FloatLabelDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Float Label' }] } },
         { path: '/button', component: ButtonDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Button' }] } },

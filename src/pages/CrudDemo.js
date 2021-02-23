@@ -254,14 +254,16 @@ export const CrudDemo = () => {
         return (
             <div className="actions">
                 <Button icon="pi pi-pencil" className="p-button-rounded p-button-info p-mr-2" onClick={() => editProduct(rowData)} />
-                <Button icon="pi pi-trash" className="p-button-rounded p-button-danger" onClick={() => confirmDeleteProduct(rowData)} />
+                <Button icon="pi pi-trash" className="p-button-rounded p-button-danger p-mr-2" onClick={() => confirmDeleteProduct(rowData)} />
+                <Button icon="pi pi-upload" className="p-button-rounded p-button-warning p-mr-2" onClick={() => confirmDeleteProduct(rowData)} />
+                <Button icon="pi pi-download" className="p-button-rounded p-button-secondary p-mr-2" onClick={exportCSV}  />
             </div>
         );
     }
 
     const header = (
         <div className="table-header">
-            <h5 className="p-m-0">Manage Products</h5>
+            <h5 className="p-m-0">Manage Files</h5>
             <span className="p-input-icon-left">
                 <i className="pi pi-search" />
                 <InputText type="search" onInput={(e) => setGlobalFilter(e.target.value)} placeholder="Search..." />
@@ -327,20 +329,20 @@ export const CrudDemo = () => {
                             <label className="p-mb-3">Category</label>
                             <div className="p-formgrid p-grid">
                                 <div className="p-field-radiobutton p-col-6">
-                                    <RadioButton inputId="category1" name="category" value="Accessories" onChange={onCategoryChange} checked={product.category === 'Accessories'} />
-                                    <label htmlFor="category1">Accessories</label>
+                                    <RadioButton inputId="category1" name="category" value="Reports" onChange={onCategoryChange} checked={product.category === 'Reports'} />
+                                    <label htmlFor="category1">Reports</label>
                                 </div>
                                 <div className="p-field-radiobutton p-col-6">
-                                    <RadioButton inputId="category2" name="category" value="Clothing" onChange={onCategoryChange} checked={product.category === 'Clothing'} />
-                                    <label htmlFor="category2">Clothing</label>
+                                    <RadioButton inputId="category2" name="category" value="General" onChange={onCategoryChange} checked={product.category === 'General'} />
+                                    <label htmlFor="category2">General</label>
                                 </div>
                                 <div className="p-field-radiobutton p-col-6">
-                                    <RadioButton inputId="category3" name="category" value="Electronics" onChange={onCategoryChange} checked={product.category === 'Electronics'} />
-                                    <label htmlFor="category3">Electronics</label>
+                                    <RadioButton inputId="category3" name="category" value="Submittals" onChange={onCategoryChange} checked={product.category === 'Submittals'} />
+                                    <label htmlFor="category3">Submittals</label>
                                 </div>
                                 <div className="p-field-radiobutton p-col-6">
-                                    <RadioButton inputId="category4" name="category" value="Fitness" onChange={onCategoryChange} checked={product.category === 'Fitness'} />
-                                    <label htmlFor="category4">Fitness</label>
+                                    <RadioButton inputId="category4" name="category" value="Specifications" onChange={onCategoryChange} checked={product.category === 'Specifications'} />
+                                    <label htmlFor="category4">Specifications</label>
                                 </div>
                             </div>
                         </div>
