@@ -96,21 +96,21 @@ export const InputDemo = () => {
         )
     }
 
-    const list = () => {
-        return (
-            <div>
-                this is the list 
-            </div>
-        )
-    }
+    // const list = () => {
+    //     return (
+    //         <div>
+    //             this is the list 
+    //         </div>
+    //     )
+    // }
 
-    const card = () => {
-        return (
-            <div>
-                this is a card
-            </div>
-        )
-    }
+    // const card = () => {
+    //     return (
+    //         <div>
+    //             this is a card
+    //         </div>
+    //     )
+    // }
 
     const itemTemplate = (data, layout) => {
         if (!data) {

@@ -25,7 +25,7 @@ export const CrudDemo = () => {
         // price: 0,
         // quantity: 0,
         // rating: 0,
-        date: 'INSTOCK'
+        date: ''
     };
 
     const [products, setProducts] = useState(null);
@@ -244,7 +244,7 @@ export const CrudDemo = () => {
     const statusBodyTemplate = (rowData) => {
         return (
             <>
-                <span className="p-column-title">Status</span>
+                <span className="p-column-title">Date</span>
                 <span className={`product-badge`}>{rowData.date}</span>
             </>
         )

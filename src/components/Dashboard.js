@@ -141,8 +141,8 @@ export const Dashboard = () => {
     const statusBodyTemplate = (data) => {
         return (
             <>
-                <span className="p-column-title">Status</span>
-                <span className={`product-badge status-${data.inventoryStatus.toLowerCase()}`}>{data.inventoryStatus}</span>
+                <span className="p-column-title">Date</span>
+                <span className={`product-badge status-${data.date.toLowerCase()}`}>{data.date}</span>
             </>
         )
     };
