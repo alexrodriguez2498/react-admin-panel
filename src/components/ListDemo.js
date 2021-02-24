@@ -77,8 +77,8 @@ export const ListDemo = () => {
                     </div>
                     <div className="product-list-action">
                         <span className="product-price">${data.price}</span>
-                        <Button icon="pi pi-shopping-cart" label="Add to Cart" disabled={data.inventoryStatus === 'OUTOFSTOCK'}></Button>
-                        <span className={`product-badge status-${data.inventoryStatus.toLowerCase()}`}>{data.inventoryStatus}</span>
+                        <Button icon="pi pi-shopping-cart" label="Add to Cart" disabled={data.date === 'OUTOFSTOCK'}></Button>
+                        <span className={`product-badge status-${data.date.toLowerCase()}`}>{data.date}</span>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ export const ListDemo = () => {
                             <i className="pi pi-tag product-category-icon"></i>
                             <span className="product-category">{data.category}</span>
                         </div>
-                        <span className={`product-badge status-${data.inventoryStatus.toLowerCase()}`}>{data.inventoryStatus}</span>
+                        <span className={`product-badge status-${data.date.toLowerCase()}`}>{data.date}</span>
                     </div>
                     <div className="product-grid-item-content">
                         <img src={`assets/demo/images/product/${data.image}`} alt={data.name} />
@@ -104,7 +104,7 @@ export const ListDemo = () => {
                     </div>
                     <div className="product-grid-item-bottom">
                         <span className="product-price">${data.price}</span>
-                        <Button icon="pi pi-shopping-cart" disabled={data.inventoryStatus === 'OUTOFSTOCK'}></Button>
+                        <Button icon="pi pi-shopping-cart" disabled={data.date === 'OUTOFSTOCK'}></Button>
                     </div>
                 </div>
             </div>
