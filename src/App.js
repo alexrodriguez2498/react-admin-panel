@@ -10,8 +10,9 @@ import AppSearch from './AppSearch';
 import AppRightMenu from './AppRightMenu';
 
 import { Dashboard } from './components/Dashboard';
+import { PlansDemo } from './components/PlansDemo';
 import { TasksDemo } from './components/TasksDemo';
-import { InputDemo } from './components/InputDemo';
+import { PhotosDemo } from './components/PhotosDemo';
 // import { FloatLabelDemo } from './components/FloatLabelDemo';
 // import { ButtonDemo } from './components/ButtonDemo';
 // import { TableDemo } from './components/TableDemo';
@@ -74,18 +75,19 @@ const App = () => {
 
     const menu = [
         {
-            label: "Favorites", icon: "pi pi-fw pi-home",
+            // label: "Favorites", icon: "pi pi-fw pi-home",
             items: [
-                { label: "Dashboard", icon: "pi pi-fw pi-home", to: "/" }
+                { label: "Dashboard", icon: "pi pi-fw pi-home", to: "/" },
+                { label: "Plans", icon: "pi pi-fw pi-id-card", to: "/plans" },
+                { label: "Tasks", icon: "pi pi-fw pi-check-square", to: "/tasks" },
+                { label: "Crud", icon: "pi pi-fw pi-pencil", to: "/crud" },
+                { label: "Photos", icon: "pi pi-fw pi-camera", to: "/photos" },
             ]
         },
-        { separator: true },
+        // { separator: true },
         {
-            label: "UI Kit", icon: "pi pi-fw pi-id-card",
+            // label: "UI Kit", icon: "pi pi-fw pi-id-card",
             items: [
-                { label: "Tasks", icon: "pi pi-fw pi-id-card", to: "/tasks" },
-                { label: "Input", icon: "pi pi-fw pi-check-square", to: "/input" },
-                { label: "Crud", icon: "pi pi-fw pi-pencil", to: "/crud" },
                 // { label: "Float Label", icon: "pi pi-fw pi-bookmark", to: "/floatlabel" },
                 // { label: "Button", icon: "pi pi-fw pi-mobile", to: "/button" },
                 // { label: "Table", icon: "pi pi-fw pi-table", to: "/table" },
@@ -186,8 +188,10 @@ const App = () => {
 
     const routers = [
         { path: '/', component: Dashboard, exact: true, meta: { breadcrumb: [{ parent: 'Dashboard', label: 'Dashboard' }] } },
-        { path: '/tasks', component: TasksDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Tasks' }] } },
-        { path: '/input', component: InputDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Input' }] } },
+        { path: '/plans', component: PlansDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'plans' }] } },
+        { path: '/tasks', component: TasksDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'tasks' }] } },
+        { path: '/crud', component: CrudDemo, meta: { breadcrumb: [{ parent: 'Pages', label: 'crud' }] } },
+        { path: '/photos', component: PhotosDemo, meta: { breadcrumb: [{ parent: 'Pages', label: 'photos' }] } },
         // { path: '/floatlabel', component: FloatLabelDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Float Label' }] } },
         // { path: '/button', component: ButtonDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Button' }] } },
         // { path: '/table', component: TableDemo, meta: { breadcrumb: [{ parent: 'UI Kit', label: 'Table' }] } },
@@ -210,7 +214,6 @@ const App = () => {
         // { path: '/display', component: DisplayDemo, meta: { breadcrumb: [{ parent: 'Utilities', label: 'Display' }] } },
         // { path: '/flexbox', component: FlexBoxDemo, meta: { breadcrumb: [{ parent: 'Utilities', label: 'Flexbox' }] } },
         // { path: '/text', component: TextDemo, meta: { breadcrumb: [{ parent: 'Utilities', label: 'Text' }] } },
-        { path: '/crud', component: CrudDemo, meta: { breadcrumb: [{ parent: 'Pages', label: 'Crud' }] } },
     //     { path: '/calendar', component: CalendarDemo, meta: { breadcrumb: [{ parent: 'Pages', label: 'Calendar' }] } },
     //     { path: '/invoice', component: Invoice, meta: { breadcrumb: [{ parent: 'Pages', label: 'Invoice' }] } },
     //     { path: '/help', component: Help, meta: { breadcrumb: [{ parent: 'Pages', label: 'Help' }] } },
