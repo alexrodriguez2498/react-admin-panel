@@ -75,15 +75,22 @@ export const TasksDemo = () => {
             </div>
         )
     }
-
-    const Component = (data) => {
-        return (
+    
+    const Example  = (data) => {
+    return (
             <div>
                 {
-                    data.map(container => (
-                        <p key={container.id}>
-                            {container.title}
-                        </p>
+                    data.map(item => (
+                        <div key={item.id}>
+                            {item.title}
+                            {
+                                item.cards.map(card => (
+                                    <p key={card.id ``}>
+                                        {card.text}
+                                    </p>
+                                ))
+                            }
+                        </div>
                     ))
                 }
             </div>
@@ -112,7 +119,7 @@ export const TasksDemo = () => {
                         <DataView value={dataViewValue} layout={layout} itemTemplate={itemTemplate} header={dataViewHeader}></DataView>
                 </div>
             </div> */}
-            <Component/>
+            <Example />
         </>
     )
 }
