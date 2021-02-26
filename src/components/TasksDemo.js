@@ -146,7 +146,6 @@ export const TasksDemo = () => {
                         <DataView value={dataViewValue} layout={layout} itemTemplate={itemTemplate} header={dataViewHeader}></DataView>
                 </div>
             </div>
-            {/* <Example /> */}
         </>
     )
 }
