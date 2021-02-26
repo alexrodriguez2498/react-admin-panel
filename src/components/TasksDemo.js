@@ -9,11 +9,12 @@ import TaskService from '../service/TaskService'
 export const TasksDemo = () => {
     const [ dataViewValue, setDataViewValue ] = useState(null)
     const [ layout, setLayout ] = useState('grid')
+    // const [ data, SetData ] = useState([])
     const  toast = useRef()
 
     useEffect(() => {
         const taskService = new TaskService();
-        taskService.getTasks().then((data) => setDataViewValue(data));
+        taskService.getTasks().then(({data}) => setDataViewValue(data));
     }, [])
 
     const items = [
@@ -60,19 +61,45 @@ export const TasksDemo = () => {
         </div>
     );
 
-    const dataViewListItem = (/*data*/) => {
+    const dataViewListItem = (data) => {
         return (
-            <div className="p-col-12">
-            <h1> view 1</h1>
+            <div>
+                {
+                    data.map(item => (
+                        <div key={item.id}>
+                            {item.title}
+                            {
+                                item.cards.map(card => (
+                                    <p key={card.id ``}>
+                                        {card.text}
+                                    </p>
+                                ))
+                            }
+                        </div>
+                    ))
+                }
             </div>
         )
     } 
 
-    const dataViewGridItem = () => {
+    const dataViewGridItem = (data) => {
         return (
-            <div className="p-col-12">
-                <h1>view 2</h1>
-            </div>
+            <div>
+            {
+                data.map(item => (
+                    <div key={item.id}>
+                        {item.title}
+                        {
+                            item.cards.map(card => (
+                                <p key={card.id ``}>
+                                    {card.text}
+                                </p>
+                            ))
+                        }
+                    </div>
+                ))
+            }
+        </div>
         )
     }
     
@@ -114,12 +141,12 @@ export const TasksDemo = () => {
     return (
         <>
         <Toast ref={toast}></Toast>
-            {/* <div className="p-grid">
+            <div className="p-grid">
                 <div className="p-col-12">
                         <DataView value={dataViewValue} layout={layout} itemTemplate={itemTemplate} header={dataViewHeader}></DataView>
                 </div>
-            </div> */}
-            <Example />
+            </div>
+            {/* <Example /> */}
         </>
     )
 }
