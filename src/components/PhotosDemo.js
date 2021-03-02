@@ -46,7 +46,7 @@ export const PhotosDemo = () => {
 
     const cardHeader = (data) => {
         return(
-            <img src={data.image} alt={data.name} />
+            <img src="https://random.imagecdn.app/150/150" alt={data.name} />
         )
     }
 
