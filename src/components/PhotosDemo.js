@@ -73,11 +73,15 @@ export const PhotosDemo = () => {
     
     const PhotosDemoComponent = (data) => {
         return (
-            <div className="p-grid p-d-flex p-flex-wrap container">
+            // <div className="p-grid p-d-flex p-flex-wrap ">
+                <div className="container">
                     <img className="image" src={data.src} alt={data.alt}/>
                     <div className="overlay overlayFade">
-                        <p className="text">some text</p>
+                        <Checkbox onChange={e => setChecked(e.checked)} checked={checked} className="checkbox"></Checkbox>
+                        <i className="pi pi-download icon"></i>
+                        <p className="text">10/ 02 / 2021</p>
                     </div>
+                {/* </div> */}
                 </div>
         )
     }

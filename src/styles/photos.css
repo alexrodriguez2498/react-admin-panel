@@ -3,6 +3,7 @@
   width: 150px;
   margin: 12px;
   position: relative;
+  /* margin: 12px; */
 }
 
 .image {
@@ -17,7 +18,8 @@
   position: absolute;
   transition: all .3s ease;
   opacity: 0;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.5);
+  ;
 }
 
 .container:hover .overlay {
@@ -29,7 +31,8 @@
   height: 100%;
   top: 0;
   left: 0;
-  background-color: gray;
+  background-color: rgba(0, 0, 0, 0.5);
+  ;
 }
 
 .container:hover .overlayLeft {
@@ -37,8 +40,31 @@
 }
 
 .text {
+  width: 100%;
+  color: white;
   position: absolute;
-  top: 50%;
+  bottom: 0;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-30%, -50%);
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: white;
+  padding: 8px;
+  font-size: 18px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+.checkbox {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 8px;
+  width: 100%;
 }
