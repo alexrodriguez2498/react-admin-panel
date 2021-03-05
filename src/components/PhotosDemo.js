@@ -3,17 +3,22 @@ import { DataView } from 'primereact/dataview';
 import { Button } from "primereact/button"
 import { SplitButton } from 'primereact/splitbutton'
 import { Toast } from 'primereact/toast';
-import { Card } from 'primereact/card'
-import ProductService from '../service/ProductService' 
+import styled from 'styled-components'
+// import { Card } from 'primereact/card'
+import { Checkbox } from 'primereact/checkbox'
+import PhotosService from '../service/PhotosService' 
+
+import '../styles/photos.css'
 
 export const PhotosDemo = () => {
     const [ dataViewValue, setDataViewValue ] = useState(null)
-    const [ layout, setLayout ] = useState('grid')
+    // const [ layout, setLayout ] = useState('grid')
+    const [ checked, setChecked ] = useState(false)
     const  toast = useRef()
 
     useEffect(() => {
-        const planService = new ProductService();
-        planService.getProducts().then((data) => setDataViewValue(data));
+        const photosService = new PhotosService();
+        photosService.getPhotos().then((data) => setDataViewValue(data));
     }, [])
 
     const items = [
@@ -44,11 +49,11 @@ export const PhotosDemo = () => {
         }
     ]
 
-    const cardHeader = (data) => {
-        return(
-            <img src="https://random.imagecdn.app/150/150" alt={data.name} />
-        )
-    }
+    // const cardHeader = (data) => {
+    //     return(
+    //         <img src="https://random.imagecdn.app/150/150" alt={data.name} />
+    //     )
+    // }
 
     const dataViewHeader = (
         <div className="p-grid p-nogutter">
@@ -66,42 +71,22 @@ export const PhotosDemo = () => {
     );
 
     
-    const dataViewGridItem = (data) => {
+    const PhotosDemoComponent = (data) => {
         return (
-            <div className="p-grid p-d-flex p-flex-wrap">
-                    <Card style={{minWidth: '150px', margin:"32px", padding:"10px", minHeight: '150px'}} header={cardHeader(data)} />
+            <div className="p-grid p-d-flex p-flex-wrap container">
+                    <img className="image" src={data.src} alt={data.alt}/>
+                    <div className="overlay overlayFade">
+                        <p className="text">some text</p>
+                    </div>
                 </div>
         )
     }
-    
-    const dataViewListItem = (data) => {
-        return (
-            <div className="p-col-12">
-                 {data.name}
-            </div>
-        )
-    } 
-
-
-
-    const itemTemplate = (data, layout) => {
-        if (!data) {
-            return;
-        }
-
-        if (layout === 'list') {
-            return dataViewListItem(data);
-        }
-        else if (layout === 'grid') {
-            return dataViewGridItem(data);
-        }
-    };
     return (
         <>
         <Toast ref={toast}></Toast>
             <div className="p-grid">
                 <div className="p-col-12">
-                        <DataView value={dataViewValue} layout={"grid"} itemTemplate={itemTemplate} header={dataViewHeader}></DataView>
+                        <DataView value={dataViewValue} layout={"grid"} itemTemplate={PhotosDemoComponent} header={dataViewHeader}></DataView>
                 </div>
             </div>
         </>
