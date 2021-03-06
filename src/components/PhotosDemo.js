@@ -3,8 +3,6 @@ import { DataView } from 'primereact/dataview';
 import { Button } from "primereact/button"
 import { SplitButton } from 'primereact/splitbutton'
 import { Toast } from 'primereact/toast';
-import styled from 'styled-components'
-// import { Card } from 'primereact/card'
 import { Checkbox } from 'primereact/checkbox'
 import PhotosService from '../service/PhotosService' 
 
